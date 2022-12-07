@@ -1,6 +1,9 @@
 PIAIC TypeScript Node JS assignments repo
+Add inquirer to your module from user prompt and input
+1. npm i inquirer
+2. npm i @types/inquirer
 
-Creating an NPX package
+Creating a working TS Application and NPX package
 1.	Install npx “npm install -g npx”
 2.	Create a new account on https://www.npmjs.com/
 	a.	Create your application using “npm init -y”.
