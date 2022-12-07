@@ -1,4 +1,5 @@
-PIAIC TypeScript Node JS assignments repo
+#PIAIC TypeScript Node JS assignments repo
+
 Add inquirer to your module from user prompt and input
 1. npm i inquirer
 2. npm i @types/inquirer
