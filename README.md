@@ -34,7 +34,7 @@
 4.	Open package.json and change the following parameters
 		a.name:<Your Package Name>.
 		b.Add a new parameter "type" and set its value to "module".
-		c. Add a new parameter "bin": {"module_name":"bin/<executable js file genreated by ts compiler>.js"}.
+		c. Add a new parameter "bin": {"module_name":"bin"}. //<executable js file genreated by ts compiler>.js
 		d.Add required Node dependencies in Dependency and DevDependency sections.
 		e.Create a new folder named bin in project root directory.
 		f.Open TSConfig:
