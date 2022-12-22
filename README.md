@@ -22,7 +22,7 @@
 > + #! /usr/bin/env node
 5. Start coding your application
 
-# Add inquirer to your module from user prompt and input
+# Add inquirer to your module for user prompt and input
 1. npm i inquirer
 2. npm i @types/inquirer
 
