@@ -13,13 +13,13 @@
 +>    "<package_name>": "./bin/<output_js_file>.js" 
 +> }//executable path for js file for NPX
 2. Open tsconfig.json and update the following parameters
- + "target": "ES2022",
- + "module": "NodeNext",
- + "moduleResolution": "NodeNext",
- +  "outDir": "./bin",//this will output all the transpiled JS files in outdir folder.
+> + "target": "ES2022",
+> + "module": "NodeNext",
+> + "moduleResolution": "NodeNext",
+> +  "outDir": "./bin",//this will output all the transpiled JS files in outdir folder.
 3. Create a new TS file under src folder.
 4. Add the following line at tha start of your TS file, if you are intended to use the packege as a self executed NPX application.
-> #! /usr/bin/env node
+>+ #! /usr/bin/env node
 5. Start coding your application
 
 # Add inquirer to your module from user prompt and input
@@ -29,13 +29,13 @@
 # Creating a working TS Application and NPX package
 1.	Install npx “npm install -g npx”
 2.	Create a new account on https://www.npmjs.com/
-		a.Create your application using “npm init -y”.
+		>+ Create your application using “npm init -y”.
 3.	Configure TSC Config using “tsc –init”
 4.	Open package.json and change the following parameters
-	+name:<Your Package Name>.
-	+Add a new parameter "type" and set its value to "module".
-	+ Add a new parameter "bin": {"module_name":"bin"}. //<executable js file genreated by ts compiler>.js
-	+Add required Node dependencies in Dependency and DevDependency sections.
+	>+ name:<Your Package Name>.
+	>+ Add a new parameter "type" and set its value to "module".
+	>+ Add a new parameter "bin": {"module_name":"bin"}. //<executable js file genreated by ts compiler>.js
+	>+ Add required Node dependencies in Dependency and DevDependency sections.
 	+	e.Create a new folder named bin in project root directory.
 	+	f.Open TSConfig:
 	+	>	i.set "target": "ES2022".
