@@ -10,8 +10,8 @@
 1. Open package.json and add
 + > "type": "module",
 + >  "bin": {
-+ >    "<package_name>": "./bin/<output_js_file>.js" 
-+ > }//executable path for js file for NPX
+    "<package_name>": "./bin/<output_js_file>.js" 
+ }//executable path for js file for NPX
 2. Open tsconfig.json and update the following parameters
 > + "target": "ES2022",
 > + "module": "NodeNext",
