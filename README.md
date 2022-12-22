@@ -8,15 +8,15 @@
 
 # Update the configurations for your newly created typescript project.
 1. Open package.json and add 
-> "type": "module",
->  "bin": {
->    "<package_name>": "./bin/<output_js_file>.js" 
-> }//executable path for js file for NPX
++> "type": "module",
++>  "bin": {
++>    "<package_name>": "./bin/<output_js_file>.js" 
++> }//executable path for js file for NPX
 2. Open tsconfig.json and update the following parameters
-  "target": "ES2022",
-  "module": "NodeNext",
-  "moduleResolution": "NodeNext",
-   "outDir": "./bin",//this will output all the transpiled JS files in outdir folder.
+ + "target": "ES2022",
+ + "module": "NodeNext",
+ + "moduleResolution": "NodeNext",
+ +  "outDir": "./bin",//this will output all the transpiled JS files in outdir folder.
 3. Create a new TS file under src folder.
 4. Add the following line at tha start of your TS file, if you are intended to use the packege as a self executed NPX application.
 > #! /usr/bin/env node
@@ -32,10 +32,10 @@
 		a.Create your application using “npm init -y”.
 3.	Configure TSC Config using “tsc –init”
 4.	Open package.json and change the following parameters
-	+	a.name:<Your Package Name>.
-	+	b.Add a new parameter "type" and set its value to "module".
-	+	c. Add a new parameter "bin": {"module_name":"bin"}. //<executable js file genreated by ts compiler>.js
-	+	d.Add required Node dependencies in Dependency and DevDependency sections.
+	+name:<Your Package Name>.
+	+Add a new parameter "type" and set its value to "module".
+	+ Add a new parameter "bin": {"module_name":"bin"}. //<executable js file genreated by ts compiler>.js
+	+Add required Node dependencies in Dependency and DevDependency sections.
 	+	e.Create a new folder named bin in project root directory.
 	+	f.Open TSConfig:
 	+	>	i.set "target": "ES2022".
@@ -47,6 +47,6 @@
 7.	Install the generated module in npm global directory using command "npm i -g"
 8.	Test the project using command "npx <PackageName>".
 9.	After successfull execution prepare it to move it to NPMJS environment to be available to everyone using npx command.
-	+>	a.Login to NPMJS remotely using "npm login".
-	+>	b.After a successful login , execute "npm publish". This will upload the newly built Node Module to NPMJS environment using your provided credentials.
-	+>	c.Try testing is using command using "npx <module_name>".
+	+>	Login to NPMJS remotely using "npm login".
+	+>	After a successful login , execute "npm publish". This will upload the newly built Node Module to NPMJS environment using your provided credentials.
+	+>	Try testing is using command using "npx <module_name>".
