@@ -1,4 +1,4 @@
-# PIAIC TypeScript Node JS assignments repo
+# PIAIC TypeScript Node JS Assignments Repository
 ## Create a new TypeScript Project
 > 1. mkdir <project_folder_name>
 > 2. cd <project_folder_name>
