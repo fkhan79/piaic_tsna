@@ -1,12 +1,12 @@
-#PIAIC TypeScript Node JS assignments repo
-#Create a new TypeScript Project
+# PIAIC TypeScript Node JS assignments repo
+## Create a new TypeScript Project
 1. mkdir <project_folder_name>
 2. cd <project_folder_name>
 3. mkdir src //for source ts files
 4. npm init -y //for initilizing package.json
 6. tsc -init //for initilizing typescript configuration
 
-#Update the configurations for your newly created typescript project.
+# Update the configurations for your newly created typescript project.
 1. Open package.json and add 
  "type": "module",
   "bin": {
@@ -22,11 +22,11 @@
  #! /usr/bin/env node
  5. Start coding your application
 
-#Add inquirer to your module from user prompt and input
+# Add inquirer to your module from user prompt and input
 1. npm i inquirer
 2. npm i @types/inquirer
 
-#Creating a working TS Application and NPX package
+# Creating a working TS Application and NPX package
 1.	Install npx “npm install -g npx”
 2.	Create a new account on https://www.npmjs.com/
 		a.Create your application using “npm init -y”.
