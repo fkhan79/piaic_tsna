@@ -7,7 +7,7 @@
 > 6. tsc -init //for initilizing typescript configuration
 
 # Update the configurations for your newly created typescript project.
-1. Open package.json and add 
+1. Open package.json and add
 +> "type": "module",
 +>  "bin": {
 +>    "<package_name>": "./bin/<output_js_file>.js" 
