@@ -47,6 +47,6 @@
 7.	Install the generated module in npm global directory using command "npm i -g"
 8.	Test the project using command "npx <PackageName>".
 9.	After successfull execution prepare it to move it to NPMJS environment to be available to everyone using npx command.
-	+>	Login to NPMJS remotely using "npm login".
-	+>	After a successful login , execute "npm publish". This will upload the newly built Node Module to NPMJS environment using your provided credentials.
-	+>	Try testing is using command using "npx <module_name>".
+	+ >	Login to NPMJS remotely using "npm login".
+	+ >	After a successful login , execute "npm publish". This will upload the newly built Node Module to NPMJS environment using your provided credentials.
+	+ >	Try testing is using command using "npx <module_name>".
