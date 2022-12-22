@@ -43,7 +43,7 @@ while (true) {
             message: "Input User Pin:"
         }
     ]);
-    console.log(userNameInput.inputUser, userPasswordInput.inputPassword);
+  //  console.log(userNameInput.inputUser, userPasswordInput.inputPassword);
     let found = accounts.find(element => (element.userName == userNameInput.inputUser
         && element.password == userPasswordInput.inputPassword));
     if (found) {
@@ -62,7 +62,7 @@ while (true) {
             ]);
             switch (opr.operation) {
                 case "Cash Deposit": {
-                    console.log("Your Current Balance is ", found.customerBalance);
+                    console.log(`Your Current Balance is ${found.customerBalance}`);
                     let amount = await inquirer.prompt([
                         {
                             name: "deposit",
@@ -72,7 +72,7 @@ while (true) {
                     ]);
                     if (amount.deposit >= 0) {
                         found.customerBalance += amount.deposit;
-                        console.log("Your Current Balance after Deposit is ", found.customerBalance);
+                        console.log(`Your Current Balance after Deposit is ${found.customerBalance}`);
                     }
                     else {
                         console.log("Deposit Amount cannot be Zero or Negative");
@@ -80,7 +80,7 @@ while (true) {
                     break;
                 }
                 case "Cash Withdrawal": {
-                    console.log("Your Current Balance is ", found.customerBalance);
+                    console.log(`Your Current Balance is ${found.customerBalance}`);
                     let amount = await inquirer.prompt([
                         {
                             name: "witdrawal",
@@ -90,7 +90,7 @@ while (true) {
                     ]);
                     if (amount.witdrawal >= 0) {
                         found.customerBalance -= amount.witdrawal;
-                        console.log("Your Current Balance after Withdrawal is ", found.customerBalance);
+                        console.log(`Your Current Balance after Withdrawal is ${found.customerBalance}`);
                     }
                     else {
                         console.log("Withdrawal Amount cannot be Zero or Negative");
@@ -107,6 +107,7 @@ while (true) {
         found = accounts.find(element => (element.userName == userNameInput.inputUser));
         if (found) {
             found.pinRetries += 1;
+            console.log("Invalid user or password");
             if (found.pinRetries > 3) {
                 found.accountBlocked = true;
                 console.log("3 failed pin retries, account is blocked. ");
@@ -115,6 +116,5 @@ while (true) {
         else{
             console.log(`Cannot find user ${userNameInput.inputUser}`);
         }
-
     }
 }

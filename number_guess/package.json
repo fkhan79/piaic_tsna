@@ -1,11 +1,11 @@
 {
-  "name": "number_guess",
+  "name": "fmk-number_guess",
   "version": "1.0.0",
   "type": "module",
   "description": "",
   "main": "index.js",
   "bin": {
-    "number_guess": "./bin/number_guess.js"
+    "fmk-number_guess": "./bin/number_guess.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
