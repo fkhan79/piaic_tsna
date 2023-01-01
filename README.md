@@ -1,4 +1,9 @@
 # PIAIC TypeScript Node JS Assignments Repository
+## Node must be install prior to these steps. Check online for installation steps for your choice of OS.
+
+## Install TypeScript
+> npm install -g typescript
+
 ## Create a new TypeScript Project
 > 1. mkdir <project_folder_name>
 > 2. cd <project_folder_name>
