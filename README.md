@@ -2,9 +2,9 @@
 ## Node must be install prior to these steps. Check online for installation steps for your choice of OS.
 
 ## If you want to run TypeScript tsc command in Windows Powershell:
-+ > Open Powershell in Adminstrator mode
+> Open Powershell in Adminstrator mode
 + > Run command:
-++ > Set-ExecutionPolicy RemoteSigned
+	+ > Set-ExecutionPolicy RemoteSigned
 
 ## Install TypeScript
 > npm install -g typescript
